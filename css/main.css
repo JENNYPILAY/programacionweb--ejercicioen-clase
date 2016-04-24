@@ -196,20 +196,40 @@ list-style: none;
 
 
 /******OVERLAY CON JQUERY****/
-#overlay{
-background:rgba(0,0,0,7);/*ultimo valor es opacity*/
-width:100%;
-height:100%;
-position: absolute;
-top: 0;
-left: 0;
-text-align: center;
-display: :none;/*para que no se muestre el comienzo*/
-}
-#overlay img{
-	margin-top: 10%
-}
-#overlay p {
-	color:white;
+#overlay {
+	fondo : RGBA ( 0,0,0,0.7 ); / * ultimo valor es la opacidad * /
+	ancho : 100 % ;
+	altura : 100 % ;
+	posición : absoluta ;
+	top : 0 ;
+	izquierda : 0 ;
+	text-align : centro ;
+	pantalla : ninguno ; / * Para Que No Se muestre al comienzo * /
 }
 
+#overlay  img {
+	margin-top : 10 % ;
+}
+
+#overlay  p {
+	Color : blanco ;
+
+	//**Menú para los móviles con jQuery
+******************* /
+/ * BASADO en Dimensiones de iPhone 5 */
+
+@media (min-width: 320px) y (max-width: 568px)
+{
+	#menu  ul {
+
+		display: none;
+	}
+}
+
+@media (min-width: 568px)
+{
+	#menu select, # menú button {
+		display: none;
+	}
+}
+Estado 

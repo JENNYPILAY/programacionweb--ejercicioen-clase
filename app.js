@@ -1,6 +1,6 @@
 //!agregar overlay lightbox
 var $overlay= $("<div id='overlay'></div>");
-var image=$("<img>")
+var image=$("<img>");
 var $caption = $("<p></p>");
 
 
@@ -27,14 +27,49 @@ var texto = $(this).children("img".attr("alt");
 	console.log(href);
 });
 
+$overlay.click(function ()
+{
+	$overlay.hide();
+});
+
+	// body...
+})
+
+// menu para móviles//
+var $select= $("<select></select>");
+$("menu").append($select);
+// recorrer el menu//
+
+$("#menu a").each(function(){
+var $anchor = $(this);
+//crear una opcion  para el select por cada elemento
+var $option = $("<option></option>");
+//obtener cada valor de la opcion de atributo 
+$option.val($anchor.attr("href"));
+//obtener  el text de cada opcion
+$option.text($anchor.text());
+//agregar la opcion al select
+$select.append($option);
+var $button = $("<button"Go</button>");
+	$("#menu").append($button);
+
+	$button.click(function() {
+
+		//toma el valor de la opcion seleccionada
+		
+	window.location 
 
 
 
 
 
-//$("galeria li a").click(function(event){
-		//event.preventDefault();
-		//var href=$(this).attr("href");
-		//console.log(href);
-		//console.log(href);
-})//
+
+
+
+
+
+
+
+
+
+
